@@ -3,7 +3,11 @@ gunicorn
 fastai==2.7.7
 torch
 flask_cors
-icevision==0.12.0
-yolov5-icevision==6.0.0
 numpy
-icedata==0.5.1
+pytorch==1.10.0
+Pillow==8.4.0
+torchvision==0.11.1
+cudatoolkit=10.2
+icevision[all]==0.12.0
+mmcv-full==1.3.17
+mmdet==2.17.0
