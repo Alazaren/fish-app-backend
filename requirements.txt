@@ -6,3 +6,4 @@ flask_cors
 icevision==0.12.0
 yolov5-icevision==6.0.0
 numpy
+icedata==0.5.1
