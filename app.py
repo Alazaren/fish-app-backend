@@ -16,8 +16,7 @@ classes = learn.dls.vocab
 
 # load the object detection
 modelPath = Path('Fish_checkpoint.pth')
-checkpoint_path = os.path.join(modelPath / '')
-checkpoint_and_model = model_from_checkpoint(checkpoint_path)
+checkpoint_and_model = model_from_checkpoint(modelPath)
     
 
 def predict_single(img_file):
