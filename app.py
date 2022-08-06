@@ -9,18 +9,18 @@ from flask_cors import CORS,cross_origin
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
-# load the classifier
-learn = load_learner('export.pkl')
-classes = learn.dls.vocab
-
-# load the object detection
-modelPath = Path('Fish_checkpoint.pth')
-checkpoint_path = os.path.join(modelPath / '')
-checkpoint_and_model = model_from_checkpoint(checkpoint_path)
-
-
-
 def predict_single(img_file):
+
+
+    # load the classifier
+    learn = load_learner('export.pkl')
+    classes = learn.dls.vocab
+
+    # load the object detection
+    modelPath = Path('Fish_checkpoint.pth')
+    checkpoint_path = os.path.join(modelPath / '')
+    checkpoint_and_model = model_from_checkpoint(checkpoint_path)
+    
     model = checkpoint_and_model["model"]
     model_type = checkpoint_and_model["model_type"]
     class_map = checkpoint_and_model["class_map"]
