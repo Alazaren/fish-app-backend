@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS,cross_origin
 
-from fastai.vision.all import *
-
 from PIL import Image
 import pathlib
 import numpy as np
