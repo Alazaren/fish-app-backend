@@ -10,3 +10,4 @@ torch==1.10.0+cpu
 torchvision==0.11.1+cpu
 mmcv-full==1.3.17
 mmdet==2.17.0
+Shahi
